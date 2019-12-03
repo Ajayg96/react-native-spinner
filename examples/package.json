@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "16.9.0",
     "react-native": "0.61.5",
-    "react-native-spinner": "file:../react-native-spinner-1.0.0.tgz"
+    "react-native-modal-spinner": "file:../react-native-modal-spinner-1.0.0.tgz"
   },
   "devDependencies": {
     "@babel/core": "7.7.4",

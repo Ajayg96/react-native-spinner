@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {View, Button} from 'react-native';
-import Spinner from 'react-native-spinner';
+import Spinner from 'react-native-modal-spinner';
 
 class App extends Component {
   state = {
