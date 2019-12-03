@@ -31,7 +31,7 @@ A simple and fully customizable cross-platform React Native component that imple
 [npm][]:
 
 ```sh
-npm install react-native-spinner
+npm install react-native-modal-spinner
 ```
 
 ## Example
@@ -45,7 +45,7 @@ See [the example App.js file][example] for an example implementation.
 | isModalVisible         | Boolean                    | false     | Boolean to show/hide the modal background                  |
 | spinnerSize            | String (enum) small, large | "small"   | Size of the spinner                                        |
 | spinnerBackgroundColor | String                     | -         | Color of the spinner background                            |
-| closeModal             | Function                   | undefined | callback that is called when the user taps the back button |
+| closeModal             | Function                   | undefined | Callback that is called when the user taps the back button |
 | spinnerColor           | String                     | default   | Color of the spinner                                       |
 | isLoading              | Boolean                    | false     | Boolean to show/hide the spinner                           |
 
@@ -57,5 +57,3 @@ See [the example App.js file][example] for an example implementation.
 
 [npm]: https://www.npmjs.com/
 [example]: https://github.com/Ajayg96/react-native-spinner/blob/master/examples/App.js
-
-callback that is called when the user taps the back button
