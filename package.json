@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bugs": {
+    "url": "https://github.com/Ajayg96/react-native-spinner/issues"
+  },
+  "homepage": "https://github.com/Ajayg96/react-native-spinner",
   "keywords": [
     "react-native",
     "react-component",
@@ -16,10 +20,15 @@
     "ios",
     "android",
     "ui",
-    "spinner"
+    "spinner",
+    "activity-indicator"
   ],
   "author": "Ajay",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ajayg96/react-native-spinner"
+  },
   "devDependencies": {
     "metro-react-native-babel-preset": "^0.57.0"
   }

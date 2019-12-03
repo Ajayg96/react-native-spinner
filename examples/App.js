@@ -21,14 +21,15 @@ class App extends Component {
       <View
         style={{
           flex: 1,
-          justifyContent: 'flex-start',
+          justifyContent: 'center',
           alignItems: 'center',
           backgroundColor: '#FFF',
         }}>
         <Button title="Show spiner" onPress={this.showSpinner} />
         <Spinner
-          // spinnerColor="red"
-          // spinnerBackgroundColor="#FFF"
+          spinnerColor="red"
+          spinnerSize="small"
+          spinnerBackgroundColor="#FFF"
           isLoading={this.state.isLoading}
           isModalVisible={this.state.isModalVisible}
           closeModal={() => this.setState({isModalVisible: false})}
