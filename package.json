@@ -1,0 +1,26 @@
+{
+  "name": "react-native-spinner",
+  "version": "1.0.0",
+  "description": "A simple and fully customizable React Native component that implements a spinner UI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "react",
+    "react native",
+    "mobile",
+    "ios",
+    "android",
+    "ui",
+    "spinner"
+  ],
+  "author": "Ajay",
+  "license": "MIT",
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.57.0"
+  }
+}
