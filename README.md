@@ -1,4 +1,4 @@
-# React-Native-Spinner
+# React-Native-Modal-Spinner
 
 <div style="text-align: center">
   <img src="https://badgen.net/badge/node@LTS/>=8.11.1/green">
@@ -31,7 +31,7 @@ A simple and fully customizable cross-platform React Native component that imple
 [npm][]:
 
 ```sh
-npm install react-native-spinner
+npm install react-native-modal-spinner
 ```
 
 ## Example
@@ -40,13 +40,13 @@ See [the example App.js file][example] for an example implementation.
 
 ## Options
 
-| Property        | Type                       | Default   | Description                                                |
-| --------------- | -------------------------- | --------- | ---------------------------------------------------------- |
-| visible         | Boolean                    | false     | Boolean to show/hide the spinner                           |
-| size            | String (enum) small, large | "small"   | Size of the spinner                                        |
-| backgroundColor | String                     | -         | Color of the spinner background                            |
-| onClose         | Function                   | undefined | Callback that is called when the user taps the back button |
-| color           | String                     | default   | Color of the spinner                                       |
+| Property        | Type                       | Default                                         | Description                                                |
+| --------------- | -------------------------- | ----------------------------------------------- | ---------------------------------------------------------- |
+| visible         | Boolean                    | false                                           | Boolean to show/hide the spinner                           |
+| size            | String (enum) small, large | "small"                                         | Size of the spinner                                        |
+| backgroundColor | String                     | -                                               | Color of the spinner background                            |
+| onClose         | Function                   | -                                               | Callback that is called when the user taps the back button |
+| color           | String                     | default is gray on iOS and dark cyan on Android | Color of the spinner                                       |
 
 ## License
 
