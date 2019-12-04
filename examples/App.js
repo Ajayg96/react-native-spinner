@@ -1,17 +1,16 @@
 import React, {Component} from 'react';
 import {View, Button} from 'react-native';
-import Spinner from 'react-native-modal-spinner';
+import Spinner from 'react-native-spinner';
 
 class App extends Component {
   state = {
-    isLoading: false,
-    isModalVisible: false,
+    visible: false,
   };
 
   showSpinner = () => {
-    this.setState({isModalVisible: true, isLoading: true}, () => {
+    this.setState({visible: true}, () => {
       setTimeout(() => {
-        this.setState({isModalVisible: false, isLoading: false});
+        this.setState({visible: false});
       }, 3000);
     });
   };
@@ -25,14 +24,13 @@ class App extends Component {
           alignItems: 'center',
           backgroundColor: '#FFF',
         }}>
-        <Button title="Show spiner" onPress={this.showSpinner} />
+        <Button title="Show spinner" onPress={this.showSpinner} />
         <Spinner
-          spinnerColor="red"
-          spinnerSize="small"
-          spinnerBackgroundColor="#FFF"
-          isLoading={this.state.isLoading}
-          isModalVisible={this.state.isModalVisible}
-          closeModal={() => this.setState({isModalVisible: false})}
+          color="red"
+          size="small"
+          backgroundColor="#FFF"
+          visible={this.state.visible}
+          onClose={() => this.setState({visible: false})}
         />
       </View>
     );
