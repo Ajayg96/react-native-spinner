@@ -36,7 +36,46 @@ npm install react-native-modal-spinner
 
 ## Example
 
-See [the example App.js file][example] for an example implementation.
+```js
+import React, {Component} from 'react';
+import {View, Button} from 'react-native';
+import Spinner from 'react-native-modal-spinner';
+
+class SpinnerComponent extends Component {
+  state = {
+    visible: false,
+  };
+
+  showSpinner = () => {
+    this.setState({visible: true}, () => {
+      setTimeout(() => {
+        this.setState({visible: false});
+      }, 3000);
+    });
+  };
+
+  render() {
+    return (
+      <View
+        style={{
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: '#FFF',
+        }}>
+        <Button title="Show spinner" onPress={this.showSpinner} />
+        <Spinner
+          color="red"
+          size="small"
+          backgroundColor="#FFF"
+          visible={this.state.visible}
+          onClose={() => this.setState({visible: false})}
+        />
+      </View>
+    );
+  }
+}
+```
 
 ## Options
 
@@ -55,4 +94,3 @@ See [the example App.js file][example] for an example implementation.
 ##
 
 [npm]: https://www.npmjs.com/
-[example]: https://github.com/Ajayg96/react-native-spinner/blob/master/examples/App.js
