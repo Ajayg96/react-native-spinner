@@ -1,6 +1,6 @@
 {
-  "name": "react-native-modal-spinner",
-  "version": "1.0.1",
+  "name": "react-native-spinner",
+  "version": "1.0.2",
   "description": "A simple and fully customizable React Native component that implements a spinner UI.",
   "main": "index.js",
   "scripts": {

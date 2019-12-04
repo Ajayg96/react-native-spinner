@@ -5,19 +5,14 @@ const Spinner = props => {
   return (
     <Modal
       transparent={true}
-      visible={props.isModalVisible}
-      onRequestClose={() => props.closeModal()}
+      visible={props.visible}
+      onRequestClose={() => props.onClose()}
     >
-      {props.isLoading && (
-        <View style={styles(props).spinnerContainer}>
-          <View style={styles(props).spinner}>
-            <ActivityIndicator
-              size={props.spinnerSize}
-              color={props.spinnerColor}
-            />
-          </View>
+      <View style={styles(props).spinnerContainer}>
+        <View style={styles(props).spinner}>
+          <ActivityIndicator size={props.size} color={props.color} />
         </View>
-      )}
+      </View>
     </Modal>
   );
 };
@@ -36,7 +31,7 @@ const styles = props =>
       borderRadius: 100,
       alignItems: "center",
       justifyContent: "center",
-      backgroundColor: props.spinnerBackgroundColor
+      backgroundColor: props.backgroundColor
     }
   });
 

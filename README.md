@@ -31,7 +31,7 @@ A simple and fully customizable cross-platform React Native component that imple
 [npm][]:
 
 ```sh
-npm install react-native-modal-spinner
+npm install react-native-spinner
 ```
 
 ## Example
@@ -40,14 +40,13 @@ See [the example App.js file][example] for an example implementation.
 
 ## Options
 
-| Property               | Type                       | Default   | Description                                                |
-| ---------------------- | -------------------------- | --------- | ---------------------------------------------------------- |
-| isModalVisible         | Boolean                    | false     | Boolean to show/hide the modal background                  |
-| spinnerSize            | String (enum) small, large | "small"   | Size of the spinner                                        |
-| spinnerBackgroundColor | String                     | -         | Color of the spinner background                            |
-| closeModal             | Function                   | undefined | Callback that is called when the user taps the back button |
-| spinnerColor           | String                     | default   | Color of the spinner                                       |
-| isLoading              | Boolean                    | false     | Boolean to show/hide the spinner                           |
+| Property        | Type                       | Default   | Description                                                |
+| --------------- | -------------------------- | --------- | ---------------------------------------------------------- |
+| visible         | Boolean                    | false     | Boolean to show/hide the spinner                           |
+| size            | String (enum) small, large | "small"   | Size of the spinner                                        |
+| backgroundColor | String                     | -         | Color of the spinner background                            |
+| onClose         | Function                   | undefined | Callback that is called when the user taps the back button |
+| color           | String                     | default   | Color of the spinner                                       |
 
 ## License
 
