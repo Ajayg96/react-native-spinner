@@ -56,4 +56,3 @@ See [the example App.js file][example] for an example implementation.
 
 [npm]: https://www.npmjs.com/
 [example]: https://github.com/Ajayg96/react-native-spinner/blob/master/examples/App.js
-[license]: https://github.com/Ajayg96/react-native-spinner/blob/master/LICENSE.md
