@@ -10,8 +10,12 @@
 
 A simple and fully customizable cross-platform React Native component that implements a spinner UI.
 
-![Screenshot1](https://github.com/Ajayg96/react-native-spinner/tree/master/src/images/image1.png)
-![Screenshot2](https://github.com/Ajayg96/react-native-spinner/tree/master/src/images/image2.png)
+# Screenshots
+
+<div style="text-align: center">
+  <img src="/src/images/image1.png"/>
+  <img src="/src/images/image2.png"/>
+</div>
 
 ## Getting Started
 
