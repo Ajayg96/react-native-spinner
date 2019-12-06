@@ -13,8 +13,8 @@ A simple and fully customizable cross-platform React Native component that imple
 # Screenshots
 
 <p float="left">
-  <img src="/src/images/image1.png" width="250" height="250"/>
-  <img src="/src/images/image2.png" width="250" height="250"/>
+  <img src="/src/images/image1.png" width="300" height="400"/>
+  <img src="/src/images/image2.png" width="300" height="400"/>
 </p>
 
 ## Getting Started
