@@ -10,6 +10,9 @@
 
 A simple and fully customizable cross-platform React Native component that implements a spinner UI.
 
+![Screenshot1](https://github.com/Ajayg96/react-native-spinner/tree/master/src/images/image1.png)
+![Screenshot2](https://github.com/Ajayg96/react-native-spinner/tree/master/src/images/image2.png)
+
 ## Getting Started
 
 ### Prerequisites
@@ -37,19 +40,19 @@ npm install react-native-modal-spinner
 ## Example
 
 ```js
-import React, {Component} from 'react';
-import {View, Button} from 'react-native';
-import Spinner from 'react-native-modal-spinner';
+import React, { Component } from "react";
+import { View, Button } from "react-native";
+import Spinner from "react-native-modal-spinner";
 
 class SpinnerComponent extends Component {
   state = {
-    visible: false,
+    visible: false
   };
 
   showSpinner = () => {
-    this.setState({visible: true}, () => {
+    this.setState({ visible: true }, () => {
       setTimeout(() => {
-        this.setState({visible: false});
+        this.setState({ visible: false });
       }, 3000);
     });
   };
@@ -59,17 +62,18 @@ class SpinnerComponent extends Component {
       <View
         style={{
           flex: 1,
-          justifyContent: 'center',
-          alignItems: 'center',
-          backgroundColor: '#FFF',
-        }}>
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "#FFF"
+        }}
+      >
         <Button title="Show spinner" onPress={this.showSpinner} />
         <Spinner
           color="red"
           size="small"
           backgroundColor="#FFF"
           visible={this.state.visible}
-          onClose={() => this.setState({visible: false})}
+          onClose={() => this.setState({ visible: false })}
         />
       </View>
     );
